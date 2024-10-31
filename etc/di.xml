@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="IntegrationHelper\BaseImage\Model\InstallerInterface" type="IntegrationHelper\BaseImage\Model\DefaultInstaller"/>
+
+    <type name="IntegrationHelper\BaseLogger\Logger\LoggerInitiator">
+        <arguments>
+            <argument name="loggerTypes" xsi:type="array">
+                <item name="base_installer_critical" xsi:type="array">
+                    <item name="log_type" xsi:type="string">base_installer_critical</item>
+                    <item name="filepath" xsi:type="string">/var/log/base_installer_crit.log</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="integration-helper-installer-run" xsi:type="object">IntegrationHelper\BaseImage\Console\Command\Installer</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
