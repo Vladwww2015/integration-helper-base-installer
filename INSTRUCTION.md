@@ -2,12 +2,12 @@
 
 ### Add to yours di.xml
 ```xml
- <type name="IntegrationHelper\BaseImage\Model\DefaultInstaller">
+ <type name="IntegrationHelper\BaseInstaller\Model\DefaultInstaller">
     <arguments>
         <argument name="installerProcesses" xsi:type="array">
-            <item name="make-seed-data-customers" xsi:type="object">Venor\Customer\Installer\InstallCustomerDataProcess</item>
+            <item name="make-seed-data-customers" xsi:type="object">Vendor\Customer\Installer\InstallCustomerDataProcess</item>
         </argument>
     </arguments>
 </type>
 ```
-### Vendor\Customer\Installer\InstallCustomerDataProcess must to implement \IntegrationHelper\BaseImage\Model\InstallerProcessInterface::class
+### Vendor\Customer\Installer\InstallCustomerDataProcess must to implement \IntegrationHelper\BaseInstaller\Model\InstallerProcessInterface::class

@@ -1,6 +1,6 @@
 <?php
 
-namespace IntegrationHelper\BaseImage\Model;
+namespace IntegrationHelper\BaseInstaller\Model;
 
 use Magento\Framework\Exception\LocalizedException;
 

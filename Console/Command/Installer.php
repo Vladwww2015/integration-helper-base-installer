@@ -1,7 +1,7 @@
 <?php
-namespace IntegrationHelper\BaseImage\Console\Command;
+namespace IntegrationHelper\BaseInstaller\Console\Command;
 
-use IntegrationHelper\BaseImage\Model\InstallerInterface;
+use IntegrationHelper\BaseInstaller\Model\InstallerInterface;
 use IntegrationHelper\BaseLogger\Logger\Logger;
 use Magento\Framework\Console\Cli;
 use Symfony\Component\Console\Command\Command;
