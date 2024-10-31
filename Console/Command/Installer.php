@@ -11,7 +11,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class Installer extends Command
 {
-    public const COMMAND = 'integration-helper:installer:run';
+    public const COMMAND = 'integration-helper:installer-run';
 
     public const GROUP = 'group';
 
